@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML vs HTML5 - FSD Lab Assignment</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f4f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #173b70;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #24589b;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #d6dce5;
+        }
+
+        h2 {
+            color: #173b70;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #dce9fc;
+        }
+
+        .examples {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .good,
+        .bad {
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .good {
+            background-color: #e8f7ed;
+            border: 1px solid #71bb89;
+        }
+
+        .bad {
+            background-color: #fff0f0;
+            border: 1px solid #e29b9b;
+        }
+
+        pre {
+            background-color: #202b3c;
+            color: white;
+            padding: 12px;
+            overflow-x: auto;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+
+        button {
+            background-color: #245be8;
+            color: white;
+            border: none;
+            padding: 11px 18px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #173da7;
+        }
+
+        #demo {
+            background-color: #f9fbff;
+            border: 1px solid #b9c9e3;
+            padding: 20px;
+            min-height: 150px;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #173b70;
+            color: white;
+            padding: 15px;
+        }
+
+        @media (max-width: 650px) {
+            .examples {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: inline-block;
+            }
+
+            table {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML vs HTML5</h1>
+        <p>Full Stack Development Lab Assignment</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="#aim">Aim</a>
+        <a href="#theory">Theory</a>
+        <a href="#difference">Differences</a>
+        <a href="#examples">Examples</a>
+        <a href="#demonstration">Demonstration</a>
+    </nav>
+
+    <main>
+
+        <section id="aim">
+            <h2>1. Aim</h2>
+            <p>
+                To differentiate between HTML and HTML5 in terms of
+                features and usage, and demonstrate good and bad HTML
+                using a web page.
+            </p>
+        </section>
+
+        <section id="theory">
+            <h2>2. Theory</h2>
+
+            <h3>HTML</h3>
+            <p>
+                HTML stands for HyperText Markup Language. It is used
+                to create the structure of web pages using elements
+                such as headings, paragraphs, images and links.
+            </p>
+
+            <h3>HTML5</h3>
+            <p>
+                HTML5 introduced modern features such as semantic
+                elements, audio and video support, canvas graphics,
+                and improved form controls. Modern HTML is continuously
+                maintained as a living standard.
+            </p>
+        </section>
+
+        <section id="difference">
+            <h2>3. Difference Between HTML and HTML5</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Earlier HTML</th>
+                        <th>HTML5 / Modern HTML</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Doctype</td>
+                        <td>Longer declarations in older versions</td>
+                        <td>&lt;!DOCTYPE html&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>Semantic Tags</td>
+                        <td>Greater use of generic elements</td>
+                        <td>header, nav, main, article, footer</td>
+                    </tr>
+
+                    <tr>
+                        <td>Audio and Video</td>
+                        <td>Often used external plug-ins</td>
+                        <td>Built-in audio and video elements</td>
+                    </tr>
+
+                    <tr>
+                        <td>Graphics</td>
+                        <td>Often required external tools</td>
+                        <td>Canvas and SVG support</td>
+                    </tr>
+
+                    <tr>
+                        <td>Forms</td>
+                        <td>Fewer built-in input types</td>
+                        <td>Email, date, number and required</td>
+                    </tr>
+
+                    <tr>
+                        <td>Character Encoding</td>
+                        <td>Longer declarations were common</td>
+                        <td>Simple UTF-8 declaration</td>
+                    </tr>
+
+                    <tr>
+                        <td>Usage</td>
+                        <td>Older and legacy web pages</td>
+                        <td>Modern websites and web applications</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="examples">
+            <h2>4. Good HTML and Bad HTML</h2>
+
+            <div class="examples">
+
+                <article class="good">
+                    <h3>Good HTML</h3>
+                    <p>Uses semantic tags and proper structure.</p>
+
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"
+    content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;College News&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;College News&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;a href="#news"&gt;Latest News&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;main id="news"&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Tech Fest&lt;/h2&gt;
+            &lt;p&gt;The event starts Monday.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;College Information&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </article>
+
+                <article class="bad">
+                    <h3>Bad HTML</h3>
+                    <p>Uses generic tags and poor structure.</p>
+
+                    <pre><code>&lt;html&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;font size="6"&gt;
+            College News
+        &lt;/font&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;Latest News&lt;/div&gt;
+
+    &lt;div&gt;
+        &lt;font size="4"&gt;
+            Tech Fest
+        &lt;/font&gt;
+        &lt;br&gt;
+        The event starts Monday.
+    &lt;/div&gt;
+
+    &lt;div&gt;College Information&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </article>
+
+            </div>
+
+            <h3>Why is good HTML better?</h3>
+            <ul>
+                <li>Semantic tags describe the purpose of each page region.</li>
+                <li>Proper headings improve readability and organization.</li>
+                <li>Metadata helps browsers interpret the document correctly.</li>
+                <li>CSS should be used for styling instead of obsolete tags like font.</li>
+            </ul>
+        </section>
+
+        <section id="demonstration">
+            <h2>5. Web Page Demonstration</h2>
+
+            <p>
+                Click the buttons below to see the difference between
+                good semantic HTML and poorly structured HTML.
+            </p>
+
+            <button type="button" onclick="showGood()">
+                Show Good HTML
+            </button>
+
+            <button type="button" onclick="showBad()">
+                Show Bad HTML
+            </button>
+
+            <div id="demo" aria-live="polite">
+                <header>
+                    <h2>College News</h2>
+                </header>
+
+                <nav>
+                    <a href="#demonstration">Latest News</a>
+                </nav>
+
+                <main>
+                    <article>
+                        <h3>Tech Fest Announced</h3>
+                        <p>The college tech fest starts on Monday.</p>
+                    </article>
+                </main>
+
+                <footer>College Information</footer>
+            </div>
+        </section>
+
+        <section id="result">
+            <h2>6. Result and Conclusion</h2>
+            <p>
+                The differences between HTML and HTML5 were studied.
+                Good HTML was demonstrated using semantic tags and
+                proper document structure. Bad HTML was demonstrated
+                using non-semantic tags and poor structure. Semantic
+                HTML improves code readability, maintainability and
+                can support accessibility.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Full Stack Development Lab Assignment</p>
+    </footer>
+
+    <script>
+        function showGood() {
+            document.getElementById("demo").className = "";
+
+            document.getElementById("demo").innerHTML = `
+                <header>
+                    <h2>College News</h2>
+                </header>
+
+                <nav>
+                    <a href="#demonstration">Latest News</a>
+                </nav>
+
+                <main>
+                    <article>
+                        <h3>Tech Fest Announced</h3>
+                        <p>The college tech fest starts on Monday.</p>
+                    </article>
+                </main>
+
+                <footer>Good semantic structure</footer>
+            `;
+        }
+
+        function showBad() {
+            document.getElementById("demo").className = "";
+
+            document.getElementById("demo").innerHTML = `
+                <div style="font-size:28px;font-weight:bold">
+                    College News
+                </div>
+
+                <div style="color:blue;text-decoration:underline">
+                    Latest News
+                </div>
+
+                <div>
+                    <span style="font-size:20px;font-weight:bold">
+                        Tech Fest Announced
+                    </span>
+                    <br><br>
+                    The college tech fest starts on Monday.
+                </div>
+
+                <div style="margin-top:15px">
+                    Generic structure
+                </div>
+            `;
+        }
+    </script>
+
+</body>
+
+</html>
